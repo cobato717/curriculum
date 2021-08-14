@@ -1,5 +1,6 @@
 package check;
 
+import constants.Constants;
 
 public class Check {
 
@@ -9,18 +10,17 @@ public class Check {
 	
 
 	public static void main(String[]args) {
-		printName();
 		
-		constants.Constants cs = new constants.Constants();
+		printName(firstName,lastName);
 		
-		Pet pt = new Pet(cs.CHECK_CLASS_JAVA,cs.CHECK_CLASS_HOGE);	
+		Pet pt = new Pet(Constants.CHECK_CLASS_JAVA,Constants.CHECK_CLASS_HOGE);	
 		pt.introduce();
 		
-		RobotPet rp = new RobotPet(cs.CHECK_CLASS_R2D2,cs.CHECK_CLASS_LUKE); 
+		RobotPet rp = new RobotPet(Constants.CHECK_CLASS_R2D2,Constants.CHECK_CLASS_LUKE); 
 		rp.introduce();	
 	}
 	
-	private static void printName() {
+	private static void printName(String firstName,String lastName) {
 		System.out.println("PrintNameメソッド→"+firstName+lastName);
 	}	
 	
