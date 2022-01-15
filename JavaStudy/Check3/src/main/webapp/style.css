@@ -1,0 +1,12 @@
+div {
+	background-color:gray;	
+}
+label {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+label {
+	padding: 10px;
+	font-size: 10px;
+}
