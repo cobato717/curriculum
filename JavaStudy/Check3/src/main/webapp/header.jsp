@@ -10,10 +10,10 @@
 </head>
 <body>
 <div>
-<label>login<% Date date = new Date();
+<label>login</label><label class = "select"><% Date date = new Date();
       SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
       String formatDate = sdf.format(date);
-   out.print(formatDate); %></label>
+      out.print(formatDate); %></label>
 </div>
 </body>
 </html>   
